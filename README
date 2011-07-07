@@ -1,0 +1,16 @@
+A blank Wordpress 3.x theme with a good set of templates defined but with no styles or other extras
+
+Featured templates:
+
+404.php
+comments.php
+footer.php
+front-page.php
+header.php
+home.php
+index.php
+page.php
+search.php
+sidebar.php
+single.php
+style.css
