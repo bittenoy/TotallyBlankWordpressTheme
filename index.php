@@ -10,10 +10,9 @@
       
                 <?php the_content(); ?>
  
-                <div class="postmetadata">
                 <?php the_category(', ') ?> 
+
                 <?php comments_popup_link(); ?> <?php edit_post_link(); ?>
-                </div>
  
             </section>
         </article>
