@@ -3,13 +3,18 @@ A blank Wordpress 3.x theme with a good set of templates defined but with no sty
 Featured templates:
 
 404.php
+arhive.php
+author.php
 comments.php
 footer.php
 front-page.php
+functions.php
 header.php
 index.php
 page.php
 search.php
 sidebar.php
 single.php
+tag.php
+
 style.css
