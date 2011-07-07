@@ -1,13 +1,29 @@
 <?php get_header(); ?>
- 
-    <div id="container">
-            <div id="content">
-              <?php while ( have_posts() ) : the_post() ?>
-   <?php the_content(); ?>
-   <?php endwhile; ?>
 
-	</div>
+	<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
  
-    </div>
+	<article>
+        
+	<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+        <?php  the_author(); ?><br />
+            <section>
+      
+                <?php the_content(); ?>
+ 
+                <div class="postmetadata">
+                <?php the_category(', ') ?> 
+                <?php comments_popup_link(); ?> <?php edit_post_link(); ?>
+                </div>
+ 
+            </section>
+        </article>
+<?php endwhile; ?>
+ 
+        <nav>
+        <?php wp_link_pages(); ?> 
+        </nav>
+ 
+        <?php endif; ?>
+   
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

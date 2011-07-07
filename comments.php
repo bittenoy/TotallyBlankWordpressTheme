@@ -1,1 +1,1 @@
-<?php comments_template(); ?>
+<?php comment_form(); ?>
