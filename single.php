@@ -37,6 +37,8 @@
 	
 				<?php comments_popup_link(); ?>
 				<?php edit_post_link(); ?>
+				
+				<?php comments_template(); ?>
 
 
 			</footer>
@@ -45,15 +47,6 @@
 				
 		</article>
 
-	
-
-
-
-		<section>
-
-			<?php comments_template(); ?>
-
-		</section>
 
 	
 	<?php endwhile; ?>
