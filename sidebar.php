@@ -1,5 +1,5 @@
 <div class="sidebar">
-<?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar() ) : else : ?>
+	<?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar() ) : else : ?>
  
-<?php endif; ?>
-</div>
+	<?php endif; ?>
+</div> <!-- class=sidebar ends here --> 

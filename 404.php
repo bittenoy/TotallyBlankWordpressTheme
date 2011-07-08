@@ -1,4 +1,7 @@
 <?php get_header(); ?>
-<h2>404</h2>
+
+	<h2>404</h2>
+	<p></p>
+
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

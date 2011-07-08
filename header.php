@@ -3,31 +3,32 @@
 
 <head>
 
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 
-<title><?php wp_title(); ?> <?php bloginfo( 'name' ); ?></title>
+	<title><?php wp_title(); ?> <?php bloginfo( 'name' ); ?></title>
 
-<link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" type="text/css"/>
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" type="text/css"/>
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
-<?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
+	<?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 
-<?php wp_head(); ?>
+	<?php wp_head(); ?>
 
 </head>
 
 
 <header>
 
-<h1><a href="<?php echo get_option('home'); ?>"><?php bloginfo('name')?></a></h1>
-<p><?php bloginfo('description'); ?> </p>
+	<h1><a href="<?php echo get_option('home'); ?>"><?php bloginfo('name')?></a></h1>
+	<p><?php bloginfo('description'); ?> </p>
+
+	<nav>
+
+		<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+
+	</nav>
 
 </header>
 
-
-<nav>
-
-<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-
-</nav>
+<div id="main">
