@@ -5,17 +5,19 @@
 	
 		<article>
 			
-			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-			<?php  the_author(); ?><br />
+			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3> <!-- Title of the post -->
+	
+			<?php  the_author(); ?><br /> <!-- Author of the post -->
+	
 			<section>
+	
+				<?php the_content(); ?> <!-- Contents of a post -->
 		
-				<?php the_content(); ?>
-		
-				<?php the_category(', ') ?>  
-				
-				<?php the_tags(', ') ?> 
-		
-				<?php comments_popup_link(); ?> <?php edit_post_link(); ?>
+				<?php the_category(', ') ?>  <!-- Post category -->
+				<?php the_tags(', ') ?>  <!-- Post tags -->
+	
+				<?php comments_popup_link(); ?>
+				<?php edit_post_link(); ?>
 		
 			</section>
 		</article>
