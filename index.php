@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <?php if(have_posts()) : ?>
+
 	<?php while(have_posts()) : the_post(); ?>
 	
 		<article>
@@ -20,12 +21,16 @@
 				<?php edit_post_link(); ?>
 		
 			</section>
+
 		</article>
+
 	<?php endwhile; ?>
  
         <nav>
-        <?php wp_link_pages(); ?> 
-        </nav>
+	
+	        <?php wp_link_pages(); ?> 
+        
+	</nav>
  
 <?php endif; ?>
    
