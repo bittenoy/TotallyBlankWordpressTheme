@@ -16,9 +16,12 @@
 			<?php the_title(); ?>
 			</a>
 
-			<br />
-			<?php the_excerpt(); ?>
+			<?php echo get_the_date( ); ?> <!-- Date published -->
+			<?php the_time(); ?>  <!-- Time published -->
+			<?php  the_author(); ?><br /> <!-- Author of the post -->
 
+			<?php the_excerpt(); ?>
+		
 		</article>
 	
 	<?php endwhile; ?>

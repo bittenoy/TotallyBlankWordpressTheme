@@ -7,13 +7,24 @@
 
  			<header>  
 
+				<nav> <!-- Post navigation -->
+
+					<?php previous_post_link(); ?> 
+					<?php next_post_link(); ?> 
+
+				</nav>
+
 				<h3>
 				<a href="<?php the_permalink(); ?>">
 				<?php the_title(); ?>
 				</a>
 				</h3> <!-- Title of the post -->
 	
+				<?php echo get_the_date( ); ?> <!-- Date published -->
+				<?php the_time(); ?>  <!-- Time published -->
 				<?php  the_author(); ?><br /> <!-- Author of the post -->
+
+
 
 			</header>	
 
@@ -27,10 +38,6 @@
 				<?php comments_popup_link(); ?>
 				<?php edit_post_link(); ?>
 
-				<nav> <!-- Post navigation -->
-					<?php previous_post_link(); ?> 
-					<?php next_post_link(); ?> 
-				</nav>
 
 			</footer>
 
