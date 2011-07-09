@@ -1,5 +1,11 @@
 <?php
 
+
+// Core functionality stuff
+ add_theme_support('automatic-feed-links');
+
+
+
 //Enable sidebar for widgets
 if ( function_exists('register_sidebar') )
     register_sidebar();

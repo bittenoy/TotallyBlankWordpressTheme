@@ -27,7 +27,7 @@
 				<?php the_category(', ') ?>  <!-- Post category -->
 				<?php the_tags(', ') ?>  <!-- Post tags -->
 	
-				<?php wp_list_comments(); ?>
+				 <?php comments_popup_link(); ?>.
 				<?php edit_post_link(); ?>
 
 

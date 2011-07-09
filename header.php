@@ -3,14 +3,13 @@
 
 <head>
 
-	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<meta charset="<?php bloginfo('charset'); ?>" />
 
-	<title><?php wp_title(); ?> <?php bloginfo( 'name' ); ?></title>
+	<title><?php bloginfo( 'name' ); ?> <?php bloginfo( 'description' ); ?></title>
 
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" type="text/css"/>
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
-	<?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
+	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
 	<?php wp_head(); ?>
 

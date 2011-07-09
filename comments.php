@@ -1,3 +1,4 @@
-<?php wp_list_comments( $args ); ?> 
+
+<?php wp_list_comments(); ?> 
 
 <?php comment_form(); ?>
