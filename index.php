@@ -16,7 +16,7 @@
 	
 				<?php echo get_the_date( ); ?> <!-- Date published -->
 				<?php the_time(); ?>  <!-- Time published -->
-				<?php  the_author(); ?><br /> <!-- Author of the post -->
+				<?php  the_author(); ?> <!-- Author of the post -->
 
 			</header>	
 

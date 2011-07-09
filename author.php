@@ -1,11 +1,15 @@
 <?php get_header(); ?>
- 
-<?php if (is_author()) { ?>
 
-	<h2><?php the_author(); ?></h2>
+<?php
+$curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
+?>
 
-<?php } ?> 
- 
+
+<h2> <?php echo $curauth->nickname; ?></h2>
+
+<?php echo $curauth->description; ?>
+<!-- see more author details at: http://codex.wordpress.org/Author_Templates -->
+
 <?php if (have_posts()) : ?>
 
 	<?php while (have_posts()) : the_post(); ?>
