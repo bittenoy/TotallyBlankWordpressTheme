@@ -27,6 +27,10 @@ License URI: http://www.opensource.org/licenses/mit-license.php
 
 }
 
+#previouspost {} /* Previous post link styling in single post pages */
+
+#nextpost {} /* Next post link styling in single post pages */
+
 
 /* =WordPress Core
 -------------------------------------------------------------- */
@@ -111,23 +115,23 @@ a img.aligncenter {
 }
 
 /* Post classes & classes from http://codex.wordpress.org/Theme_Review */
-.post-id
-.post
-.attachment
-.sticky
-.hentry
-.category-ID
-.category-name
-.tag-name
-.format-name
-.bypostauthor
+.post-id {}
+.post {}
+.attachment {}
+.sticky {}
+.hentry {}
+.category-ID {}
+.category-name {}
+.tag-name {}
+.format-name {}
+.bypostauthor {}
 
 
 
 /* Post thumbnails */
-img.wp-post-image
-img.attachment-thumbnail
-img.attachment-medium
-img.attachment-large
-img.attachment-full
+img.wp-post-image {}
+img.attachment-thumbnail {}
+img.attachment-medium {}
+img.attachment-large {}
+img.attachment-full {}
 

@@ -9,8 +9,8 @@
 
 				<nav> <!-- Post navigation -->
 
-					<?php previous_post_link(); ?> 
-					<?php next_post_link(); ?> 
+					<div id="prevpost"><?php previous_post_link(); ?></div>
+					<div id="nextpost"><?php next_post_link(); ?> </div>
 
 				</nav>
 
