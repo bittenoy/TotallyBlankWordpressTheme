@@ -114,7 +114,7 @@ a img.aligncenter {
     padding:0 4px 5px;
 }
 
-/* Post classes & classes from http://codex.wordpress.org/Theme_Review */
+/* Post classes */
 .post-id {}
 .post {}
 .attachment {}
@@ -124,8 +124,11 @@ a img.aligncenter {
 .category-name {}
 .tag-name {}
 .format-name {}
-.bypostauthor {}
 
+/* Classes from http://codex.wordpress.org/Theme_Review */
+.wp-caption-text
+.gallery-caption
+.bypostauthor {}
 
 
 /* Post thumbnails */

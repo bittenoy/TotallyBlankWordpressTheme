@@ -1,4 +1,4 @@
-A blank HTML5 theme for Wordpress 3.x with a good set of templates defined and minimal CSS. Language-independent, easy to localize.
+A blank HTML5 theme for Wordpress 3.x with a good set of templates defined and minimal CSS. Language-independent, no translation required.
 
 Featured templates:
 
@@ -19,4 +19,5 @@ sidebar.php
 single.php
 tag.php
 
+editor-style.css
 style.css
