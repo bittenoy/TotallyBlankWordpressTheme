@@ -7,7 +7,6 @@
 
 	<title><?php wp_title(); ?> <?php bloginfo( 'name' ); ?></title>
 
-	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" type="text/css"/>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
@@ -18,9 +17,11 @@
 </head>
 
 
+ <body <?php body_class(); ?>> <!-- http://codex.wordpress.org/Template_Tags/body_class -->
+
 <header>
 
-	<h1><a href="<?php echo get_option('home'); ?>"><?php bloginfo('name')?></a></h1>
+	<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name')?></a></h1>
 	<p><?php bloginfo('description'); ?> </p>
 
 	<nav>
