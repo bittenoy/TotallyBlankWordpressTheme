@@ -110,12 +110,18 @@ a img.aligncenter {
     padding:0 4px 5px;
 }
 
-/* Classes from http://codex.wordpress.org/Theme_Review */
-.sticky {
-}
+/* Post classes & classes from http://codex.wordpress.org/Theme_Review */
+.post-id
+.post
+.attachment
+.sticky
+.hentry
+.category-ID
+.category-name
+.tag-name
+.format-name
+.bypostauthor
 
-.bypostauthor {
-}
 
 
 /* Post thumbnails */

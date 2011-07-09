@@ -66,7 +66,7 @@ add_custom_image_header('header_style', 'admin_header_style');
 
 
 //Custom stylesheets
-add_editor_style('custom-editor-style.css');
+add_editor_style();
 
 // Post thumbnails
 //if ( function_exists( 'add_theme_support' ) ) { 
