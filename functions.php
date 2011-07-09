@@ -38,6 +38,11 @@ add_action( 'init', 'register_my_menus' );
 
 //Custom headers
 
+define('HEADER_TEXTCOLOR', 'ffffff');
+define('HEADER_IMAGE', '%s/images/default_header.jpg'); // %s is the template dir uri
+define('HEADER_IMAGE_WIDTH', 775); // use width and height appropriate for your theme
+define('HEADER_IMAGE_HEIGHT', 200);
+
 // gets included in the site header
 function header_style() {
     ?><style type="text/css">
