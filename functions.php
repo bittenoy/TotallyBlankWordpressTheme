@@ -1,6 +1,30 @@
 <?php
 
+//
+// Stuff that affects layouts and can be changed:
+//
+
+// Custom header presets
+define('HEADER_TEXTCOLOR', 'ffffff');
+define('HEADER_IMAGE', '%s/images/default_header.jpg'); // %s is the template dir uri
+define('HEADER_IMAGE_WIDTH', 775); // use width and height appropriate for your theme
+define('HEADER_IMAGE_HEIGHT', 200);
+
+// Content width
+if ( ! isset( $content_width ) ) 
+    $content_width = 900;
+
+
+//
+// Core functionality stuff
+//
+
+add_theme_support('automatic-feed-links');
+
+
+//
 // Removing extra stuff from headers, see: http://wpengineer.com/1438/wordpress-header/
+//
 
 //remove_action( 'wp_head', 'feed_links_extra', 3 ); // Display the links to the extra feeds such as category feeds
 remove_action( 'wp_head', 'feed_links', 2 ); // Display the links to the general feeds: Post and Comment Feed
@@ -13,22 +37,25 @@ remove_action( 'wp_head', 'adjacent_posts_rel_link', 10, 0 ); // Display relatio
 remove_action( 'wp_head', 'wp_generator' ); // Display the XHTML generator that is generated on the wp_head hook, WP version
 
 
-// Core functionality stuff
-add_theme_support('automatic-feed-links');
-
-if ( ! isset( $content_width ) ) 
-    $content_width = 900;
-
+//
 //Enable sidebar for widgets
+//
+
 if ( function_exists('register_sidebar') )
     register_sidebar();
 
 
+//
 //Enable changing background
+//
+
 add_custom_background();
 
 
-//Custom menu(s)
+//
+//Enable custom menu(s)
+//
+
 function register_my_menus() {
   register_nav_menus(
     array('header-menu' => __( 'Header Menu' ) )
@@ -38,12 +65,9 @@ function register_my_menus() {
 add_action( 'init', 'register_my_menus' );
 
 
-//Custom headers
-
-define('HEADER_TEXTCOLOR', 'ffffff');
-define('HEADER_IMAGE', '%s/images/default_header.jpg'); // %s is the template dir uri
-define('HEADER_IMAGE_WIDTH', 775); // use width and height appropriate for your theme
-define('HEADER_IMAGE_HEIGHT', 200);
+//
+//Enable custom headers
+//
 
 // gets included in the site header
 function header_style() {
@@ -67,10 +91,17 @@ function admin_header_style() {
 add_custom_image_header('header_style', 'admin_header_style');
 
 
+//
 //Custom stylesheets
+//
+
 add_editor_style();
 
+
+//
 // Post thumbnails
+//
+
 if ( function_exists( 'add_theme_support' ) ) { 
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 150, 150, true ); // default Post Thumbnail dimensions (cropped)
