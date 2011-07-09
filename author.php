@@ -16,6 +16,14 @@ $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('a
 
 		<article>
 
+			<aside>
+				<?php 	
+				if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+					the_post_thumbnail();
+				} ?>
+			</aside>
+
+
 			<a href="<?php the_permalink() ?>">
 			<?php the_title(); ?>
 			</a>

@@ -14,6 +14,9 @@ define('HEADER_IMAGE_HEIGHT', 200);
 if ( ! isset( $content_width ) ) 
     $content_width = 900;
 
+// Post thumbnail size
+set_post_thumbnail_size( 250, 250);
+
 
 //
 // Core functionality stuff
@@ -104,7 +107,6 @@ add_editor_style();
 
 if ( function_exists( 'add_theme_support' ) ) { 
 	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 150, 150, true ); // default Post Thumbnail dimensions (cropped)
 
 	// additional image sizes
 	// delete the next line if you do not need additional image sizes

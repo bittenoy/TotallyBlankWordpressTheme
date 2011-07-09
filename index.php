@@ -19,10 +19,14 @@
 				<?php  the_author(); ?> <!-- Author of the post -->
 
 			</header>	
-			<?php 	
-			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-				the_post_thumbnail();
-			} ?>
+
+			<aside>
+				<?php 	
+				if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+					the_post_thumbnail();
+				} ?>
+			</aside>
+
 			<?php the_content(); ?> <!-- Contents of a post -->
 
 			<footer>	
