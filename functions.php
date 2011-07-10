@@ -44,8 +44,11 @@ remove_action( 'wp_head', 'wp_generator' ); // Display the XHTML generator that 
 //Enable sidebar for widgets
 //
 
-if ( function_exists('register_sidebar') )
-    register_sidebar();
+if ( function_exists('register_sidebar'))
+   register_sidebar(array(
+  'before_widget' => '',
+  'after_widget' => ''
+));
 
 
 //
