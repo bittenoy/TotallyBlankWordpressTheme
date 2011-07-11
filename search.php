@@ -8,12 +8,13 @@
 		
 		<article>
 
-			<aside>
-				<?php 	
-				if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-					the_post_thumbnail();
-				} ?>
-			</aside>
+			<?php 	
+			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it. ?>
+				<aside>
+					<?php the_post_thumbnail(); ?>
+				</aside>
+			<?php } ?>
+
 
 			<a href="<?php the_permalink() ?>">
 			<?php the_title(); ?>
