@@ -1,7 +1,7 @@
 <?php
 
 //
-// Stuff that affects layouts and can be changed:
+// Stuff that affects layouts and can be customized:
 //
 
 // Custom header presets
@@ -16,13 +16,6 @@ if ( ! isset( $content_width ) )
 
 // Post thumbnail size
 set_post_thumbnail_size( 250, 250);
-
-
-//
-// Core functionality stuff
-//
-
-add_theme_support('automatic-feed-links');
 
 
 //
@@ -55,7 +48,8 @@ if ( function_exists('register_sidebar'))
 //Enable changing background
 //
 
-add_custom_background();
+if ( function_exists('add_custom_background'))
+	add_custom_background();
 
 
 //
@@ -94,21 +88,24 @@ function admin_header_style() {
     </style><?php
 }
 
-add_custom_image_header('header_style', 'admin_header_style');
+if ( function_exists('add_custom_image_header'))
+	add_custom_image_header('header_style', 'admin_header_style');
 
 
 //
 //Custom stylesheets
 //
 
-add_editor_style();
+if ( function_exists('add_editor_style'))
+	add_editor_style();
 
 
 //
-// Post thumbnails
+// Core functionality stuff & Post thumbnails
 //
 
 if ( function_exists( 'add_theme_support' ) ) { 
+	add_theme_support('automatic-feed-links');
 	add_theme_support( 'post-thumbnails' );
 
 	// additional image sizes
