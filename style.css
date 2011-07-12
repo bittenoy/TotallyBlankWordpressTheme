@@ -12,28 +12,24 @@ License URI: http://www.opensource.org/licenses/mit-license.php
 
 */
 
+body {}
 
+#header {} /* Id for page header */
 
-#main /* covers all content between header and footer */
-{
+#main {} /* Covers all content between page header and footer */
 
-
-}
-
-
-.sidebar /* class for sidebar(s) */
-{
-
-
-}
+.sidebar {} /* Class for sidebar(s) */
 
 #previouspost {} /* Previous post link styling in single post pages */
 
 #nextpost {} /* Next post link styling in single post pages */
 
 
-/* =WordPress Core
--------------------------------------------------------------- */
+/*
+Classes provided by Wordpress:
+*/
+
+/* WordPress Core */
 .alignnone {
     margin: 5px 20px 20px 0;
 }
@@ -126,8 +122,8 @@ a img.aligncenter {
 .format-name {}
 
 /* Classes from http://codex.wordpress.org/Theme_Review */
-.wp-caption-text
-.gallery-caption
+.wp-caption-text {}
+.gallery-caption {}
 .bypostauthor {}
 
 
